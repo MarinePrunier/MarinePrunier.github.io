@@ -145,12 +145,12 @@ main h2 {
 
 /* ---------- individual design: plot ---------- */
 .plot {
-  width: 310px;
+  width: 330px;
   margin: 10px;
   float: left;
 }
 .plot img {
-  width: 80%;
+  width: 85%;
   object-fit: cover;
   opacity: 1.0;
 }
