@@ -6,9 +6,6 @@ permalink: research/
 header-image: ../images/main/TNG.jpeg
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-
 <h1>Research</h1>
     <ul>
             <li>Galaxy clusters</li>
@@ -115,7 +112,6 @@ header-image: ../images/main/TNG.jpeg
         <p><strong>Université de Montréal</strong> | June 2022 | Mont-Mégantic, Canada</p>
         <p>Support astronomer at the observatory for eight nights, assist in the collection of observational data using the 1.6m telescope situated in the Canadian nature-preserved Mont Mégantic.</p>
         <p>Familiarisation with astronomical methods and the use of PESTO (exoplanet search) and CPAPIR (infrared observations) under the supervision of the night technician and astronomer.</p>
-        <img src="../images/astronomy/OMM_28.jpeg" alt="" style="width:20px">
 
         <hr>
     
@@ -123,6 +119,90 @@ header-image: ../images/main/TNG.jpeg
         <p>March 2022 | Utah, United States</p>
         <p>Organizer and participant of a 3-week Martian mission simulation at the Mars Desert Research Station. See <a href="mars_mission">MARS MISSION</a>. </p>
         
-    </body>
-    </html>
-    
+
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 40%;
+  padding: 20px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.9; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+</div>
+<div class="row">
+  <div class="column">
+    <img src="../images/astronomy/nenuphar.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="../images/mars/OMM_28.jpeg" alt="" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+
+
