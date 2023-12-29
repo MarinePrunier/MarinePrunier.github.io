@@ -135,6 +135,12 @@ main h2 {
   margin: 20px;
   float: left;
 }
+
+.contact {
+  width: 200px;
+  margin: 5px;
+  float: left;
+}
 .profile img {
   width: 100%;
   border-radius: 100px;
