@@ -145,8 +145,8 @@ main h2 {
 
 /* ---------- individual design: plot ---------- */
 .plot {
-  width: 360px;
-  margin: 2px;
+  width: 370px;
+  margin: 10px;
   float: left;
 }
 .plot img {
