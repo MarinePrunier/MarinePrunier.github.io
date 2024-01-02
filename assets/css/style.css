@@ -162,7 +162,7 @@ main h2 {
   float: left;
 }
 .plot_2 img {
-  width: 50%;
+  width: 80%;
   object-fit: cover;
   opacity: 1.0;
 }
